@@ -1,0 +1,14 @@
+PODS:
+  - ZM_Networking (0.1.0)
+
+DEPENDENCIES:
+  - ZM_Networking (from `../`)
+
+EXTERNAL SOURCES:
+  ZM_Networking:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ZM_Networking: 187cd65f4558c30822ce141c0966dfbf0ba120eb
+
+COCOAPODS: 0.39.0
