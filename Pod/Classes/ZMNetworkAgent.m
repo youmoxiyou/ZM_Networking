@@ -191,13 +191,30 @@ typedef void(^ZMFailureBlock)(NSURLSessionDataTask * _Nonnull task, NSError * _N
 
 - (ZMSuccessBlock)successBlock {
     return ^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
+        NSString *key = @(task.taskIdentifier).stringValue;
+        ZMBaseRequest *request = _requestsRecord[key];
+        request.responseObject = responseObject;
+        if (request.delegate != nil) {
+            [request.delegate requestFinished:request];
+        }
+        //TODO: Block Callback
+        //TODO: Clear Block
+        [self removeSessionTask:task];
     };
 }
 
 - (ZMFailureBlock)failureBlock {
     return ^(NSURLSessionDataTask * _Nonnull task, NSError * _Nullable error) {
+        NSString *key = @(task.taskIdentifier).stringValue;
+        ZMBaseRequest *request = _requestsRecord[key];
+        request.error = error;
+        if (request.delegate != nil) {
+            [request.delegate requestFailed:request];
+        }
+        //TODO: Block Callback
+        //TODO: Clear Block
         
+        [self removeSessionTask:task];
     };
 }
 

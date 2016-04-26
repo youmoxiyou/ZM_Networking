@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AFNetworking.h"
 
 typedef NS_ENUM(NSUInteger, ZMHttpMethod) {
     ZMHttpMethodGet,
@@ -53,7 +54,9 @@ typedef void (^AFURLSessionTaskProgressBlock)(NSProgress *);
 
 @property (nonatomic, strong, readonly) NSString *responseString;
 
-@property (nonatomic, strong, readonly) id responseJSONObject;
+@property (nonatomic, strong) id responseObject;
+
+@property (nonatomic, strong) NSError *error;
 
 //@property (nonatomic, readonly) NSInteger responseStatusCode;
 //

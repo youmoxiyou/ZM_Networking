@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		165D4E26E13B2FB4D0A0BA31 /* Pods_ZM_Networking_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BC9E730EC10E3AFF625BD8 /* Pods_ZM_Networking_Example.framework */; };
+		309402651CCC9768001DD815 /* ZMLoginApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 309402641CCC9768001DD815 /* ZMLoginApiManager.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		22BC9E730EC10E3AFF625BD8 /* Pods_ZM_Networking_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZM_Networking_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		309402631CCC9768001DD815 /* ZMLoginApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMLoginApiManager.h; sourceTree = "<group>"; };
+		309402641CCC9768001DD815 /* ZMLoginApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMLoginApiManager.m; sourceTree = "<group>"; };
 		54B8930A38C5D6B7D2715CCB /* Pods_ZM_Networking_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZM_Networking_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* ZM_Networking_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZM_Networking_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -135,6 +138,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* ZMViewController.h */,
 				6003F5A6195388D20070C39A /* ZMViewController.m */,
+				309402631CCC9768001DD815 /* ZMLoginApiManager.h */,
+				309402641CCC9768001DD815 /* ZMLoginApiManager.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -393,6 +398,7 @@
 				6003F59E195388D20070C39A /* ZMAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* ZMViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				309402651CCC9768001DD815 /* ZMLoginApiManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 @import XCTest;
+#import "ZMLoginApiManager.h"
 
 @interface Tests : XCTestCase
 
@@ -31,7 +32,12 @@
     XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
 }
 - (void)testNetwork {
-    
+    [self expectationWithDescription:@"..."];
+    ZMLoginApiManager *API = [ZMLoginApiManager new];
+    [API start];
+    [self waitForExpectationsWithTimeout:10 handler:^(NSError * _Nullable error) {
+        
+    }];
 }
 @end
 
