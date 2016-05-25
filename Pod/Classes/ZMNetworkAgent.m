@@ -112,7 +112,7 @@ typedef void(^ZMFailureBlock)(NSURLSessionDataTask * _Nonnull task, NSError * _N
                                        failureBlock(dataTask, error);
                                    }
                                    else {
-                                       successBlock(dataTask, response);
+                                       successBlock(dataTask, responseObject);
                                    }
                                }];
         request.sessionTask = dataTask;
